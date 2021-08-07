@@ -1,0 +1,47 @@
+package entities;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+
+import entities.enums.OrderStatus;
+
+public class Order {
+
+	private Date moment = new Date();
+	private OrderStatus status;
+	
+	private List<OrderItem> items = new ArrayList<>();
+	
+	public Order() {
+	}
+
+	public Order(OrderStatus status) {
+		this.status = status;
+	}
+
+	public Date getMoment() {
+		return moment;
+	}
+
+	public OrderStatus getStatus() {
+		return status;
+	}
+
+	public void setStatus(OrderStatus status) {
+		this.status = status;
+	}
+
+	public List<OrderItem> getItems() {
+		return items;
+	}
+
+	public void addItems(OrderItem item) {
+		items.add(item);
+	}
+	public void removeItems(OrderItem item) {
+		items.remove(item);
+	}
+	public double total()
+}

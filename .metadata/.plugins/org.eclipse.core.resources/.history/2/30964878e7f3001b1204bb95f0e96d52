@@ -1,0 +1,49 @@
+package entities;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import entities.Enum.WorkerLevel;
+
+public class Worker {
+	
+	private String name;
+	private WorkerLevel level;
+	private double baseSalary ;
+	
+	public Worker() {
+	}
+
+	public Worker(String name, double baseSalary) {
+		super();
+		this.name = name;
+		this.baseSalary = baseSalary;
+	}
+	List<WorkerLevel> workerLevel = new ArrayList<>();
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getBaseSalary() {
+		return baseSalary;
+	}
+
+	public void setBaseSalary(double baseSalary) {
+		this.baseSalary = baseSalary;
+	}
+
+	public List<WorkerLevel> getWorkerLevel() {
+		return workerLevel;
+	}
+
+	public void setWorkerLevel(List<WorkerLevel> workerLevel) {
+		this.workerLevel = workerLevel;
+	}
+	
+}
+ 
